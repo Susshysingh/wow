@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Tribute</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fce4ec;
+            color: #4a148c;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 50px 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #880e4f;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 80%;
+            max-width: 500px;
+            border: 2px solid #880e4f;
+            border-radius: 25px;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background-color: #880e4f;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ad1457;
+        }
+        .content {
+            margin-top: 50px;
+            display: none;
+        }
+        .content img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .content p {
+            font-size: 1.5em; /* Increased text size */
+            line-height: 1.8;
+            color: #4a148c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Search Here</h1> <!-- Changed text here -->
+        <input type="text" id="search-bar" placeholder="Type your words here...">
+        <button onclick="search()">Search</button>
+        <div class="content" id="result">
+            <img src="lady_photo_resized.jpg" alt="Lady's Photo">
+            <p id="text-content"></p>
+        </div>
+    </div>
+    <script>
+        function search() {
+            const triggerWords = ["define", "perfect", "perfection", "strong", "strongest", "best"];
+            const input = document.getElementById('search-bar').value.toLowerCase();
+            const resultDiv = document.getElementById('result');
+            const textContent = document.getElementById('text-content');
+            if (triggerWords.some(word => input.includes(word))) {
+                resultDiv.style.display = "block";
+                textContent.innerText = `Syed Insha Fatima Zaidi, jinko apna khud ka hi pura naam nhi पसंद 😤👎🏼
+Lekin ab inhey aadat hai yhi apna pura naam sunney ki kyuki Inpey ab koi choice hai nhi and inka ek aur naam hai "Madam Nomenclature" and yeh inka fav hai 🤭🎀
+Now let me introduce her inka जन्म huwa tha 18th September 2008 mai kaafi cheezein inhoney apni life mai dekhi hai inkey kuch fav gaaney jitna ik abhi tk are Nasha and Khayal by Talwinder, Happier by Olivia Rodrigo (baaki inhoney kbhi bataye hi nhi 💔) accha itna toh I can understand ki she love's Talwinder kaafi zyada and Olivia Rodrigo bhi inka fav hai lekin just so y'all know she hates kpop (gk kyuki inhoney bataya tha toh zikr krdiya 😛) 
+She's a proper sweet tooth like she love's sweets itna zyada ki sometimes inhey kuch nhi milta toh yeh sugar hi khaleti hai wow and kheer bhi inhey bohot pasand hai 🤭
+Ice cream mai she prefers 3 flvrs the most and woh hai Chocolate, Strawberry and Vanilla 💅🏼💅🏼💅🏼
+Inkey bhai behen bhi hai Ali and Myra joki inhey pareshan krkey rkh detey hai and it's kaafi fun to know ki yeh pareshan hoti hai kyuki mai toh kr nhi skta 💔 (insey डर lgti hai mujhey 😭😭😭) 
+Inko yebhi lagta hai ki divider sey phekey jaana is kaafi lame 👎🏼 (inko yeh nhi pata ki I'll shi mai throw her 🤭) 
+Inkey baarey mai kuch aur baatein yeh hai ki yeh faltu load bohot leti hai jissey inhey cervical pain hojata hai and tb bhi yeh apna dhyan nhi rkhti, unnecessary load leti hai for unnecessary log.. Inko yeh nhi smjh aata yeh jinki baatein sunkr khud pey asar hone derhi hai woh sb inkey saamney khi stand bhi nhi krtey 😎
+Sachayi toh yeh hai ki kisi ka insey koi comparison hai nhi kyuki she's itni acchi.. Yeh ek hi hai koi inki tarah bn nhi skta 😤
+The only thing jo inko khud mai badalni pareygi is tension कम ley yeh, faltu logo pr dhyan na dey, over think dusro ki बातों key लिए na krey (meri baaton key liye over think karengi I'll over explain but dusrey kya bolrhey ussey farq nhi parhna chahiye) and apna khayal jitna hosakey ussey kyi zyada rkhey 🤭
+Haqeeqat toh yeh hai ki she's the most PERFECT, BEST, STRONGEST, IRREPLACEABLE, UNMATCHED, ONE OF A KIND, LEGENDARY, EXCEPTIONAL, PHENOMENAL, UNSTOPPABLE, WORLD CLASS, RESILIENT, POWERFUL, FEARLESS, UNBREAKABLE, INVINCIBLE, DETERMINED, COURAGEOUS, RELENTLESS, FLAWLESS, IMPECABLE, ETHEREAL, RESPLENDENT person to ever exist and yeh sachayi hai baat khatam 😤☝🏼
+And kbhi don't u ever think ki aapko yaad nhi krtey hum, raat ki aakhri aur subah ki pehli soch hai aap 🤭💅🏼
+The only think I want from u is to see u hamesha happy and u to be comfortable merey sath ki aapko lagey ki aap kuch bhi kehskey, puch skey, sath has skey and sath ro skey without ever thinking ki it's attention seeking smjhi 😡
+Agar mai kbhi batana bhul jau na aapko tb bhi aapko, tb bhi aapko hamesha yaad rkhna hai ki mai aapka bohot shukrguzar hu aapki mohobbat ka, aapkey pyaar ka, is khulus ka.. Aap merey dil key bohot kareeb hai aapka bohot shukriya 
+Ek guzarish hai aapsey hamesha duao mai yaad rkhiyega
+Shukriya (😤😎🤭😭💅🏼) `;
+            } else {
+                resultDiv.style.display = "none";
+                alert("No results found. Try another word!");
+            }
+        }
+    </script>
+</body>
+</html>
